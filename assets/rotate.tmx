@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.1" orientation="orthogonal" renderorder="right-down" width="10" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="10" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="5">
  <tileset firstgid="1" name="Dungeon" tilewidth="16" tileheight="16" tilecount="100" columns="10">
   <image source="dungeon.png" trans="000000" width="160" height="160"/>
  </tileset>
- <layer id="1" name="Tile Layer 1" width="10" height="1">
+ <layer id="1" name="tiles" width="10" height="1">
   <data encoding="csv">
-23,2147483671,1073741847,3221225495,23,2684354583,3221225495,1610612759,3758096407,536870935
+2,2147483671,1073741847,3221225495,23,2684354583,3221225495,1610612759,3758096407,536870935
 </data>
  </layer>
+ <objectgroup id="2" name="objects">
+  <object id="1" name="rect" x="3.3913" y="3.34783" width="4.91304" height="3"/>
+  <object id="2" name="point" x="10.9565" y="3.95652">
+   <point/>
+  </object>
+  <object id="3" name="oval" x="4.17391" y="10.9565" width="3.95652" height="2.43478">
+   <ellipse/>
+  </object>
+  <object id="4" name="poly" x="20.6087" y="3">
+   <polygon points="0,0 -5.34783,3.26087 -1.69565,8.78261 -0.217391,3.86957 3.6087,6.6087 4.95652,2.13043"/>
+  </object>
+ </objectgroup>
 </map>
