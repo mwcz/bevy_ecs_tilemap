@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#484848" nextlayerid="4" nextobjectid="9">
+<map version="1.8" tiledversion="1.8.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" backgroundcolor="#484848" nextlayerid="7" nextobjectid="14">
  <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" tilecount="6" columns="6">
   <image source="tiles.png" trans="ff00ff" width="96" height="16"/>
  </tileset>
- <objectgroup id="3" name="objects">
-  <object id="4" name="a poly" type="blocker" x="229.242" y="172.823" rotation="322.271">
-   <polygon points="-43.2694,-64.6472 -13.6694,-35.0472 -43.2694,-5.44722 -3.80278,34.0194 55.3972,14.2861 6.06389,-54.7806"/>
+ <objectgroup color="#55aa00" id="3" name="gravity">
+  <object id="9" x="183.018" y="56.1659">
+   <ellipse/>
   </object>
-  <object id="7" name="a poly" x="145.85" y="265.751" rotation="328.803">
+  <object id="12" x="263.656" y="257.761">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffff7f" id="6" name="goal">
+  <object id="13" x="261.104" y="92.9123">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#0055ff" id="4" name="blockers">
+  <object id="4" name="a poly" x="231.941" y="182.562" rotation="327.244">
+   <polygon points="-11.8176,-45.5859 -18.7447,-10.4858 -38.3264,14.8234 -0.362497,44.1959 64.1101,13.1591 45.7279,-41.5226"/>
+  </object>
+  <object id="7" x="118.079" y="281.036" rotation="351.386">
    <polygon points="-70.1667,-104.833 -102.667,-66.3333 -6.66667,-66.3333 -54.6667,-2.33333 89.8333,23.1667 -6.1044,-175.946 -22.6667,-114.333"/>
   </object>
-  <object id="8" x="124.5" y="63.5">
+  <object id="8" x="111.486" y="13.2289">
    <polygon points="0,0 -73,31 18,79.5 49.5,18.5"/>
+  </object>
+ </objectgroup>
+ <objectgroup color="#ffaa00" id="5" name="ball">
+  <object id="10" x="15.0558" y="59.2026">
+   <ellipse/>
   </object>
  </objectgroup>
 </map>
